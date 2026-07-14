@@ -1,4 +1,7 @@
 defaultProject: behnaz-data-engineer-portfolio
 defaultDataset: dataform
 defaultAssertionDataset: dataform_assertions
+defaultLocation: us-central1
 dataformCoreVersion: 3.0.52
+vars:
+  gcsBucket: behnaz-customer-orders
