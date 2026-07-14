@@ -1,0 +1,18 @@
+config {
+  type: "view",
+  schema: "silver",
+  description: "Silver layer: cleaned and standardized order records",
+  assertions: {
+    uniqueKey: ["order_id"],
+    nonNull: ["order_id"]
+  }
+}
+
+select
+  order_id,
+  customer_id,
+  order_date,
+  order_amount,
+  status
+from ${ref("bronze", "orders")}
+where order_id is not null

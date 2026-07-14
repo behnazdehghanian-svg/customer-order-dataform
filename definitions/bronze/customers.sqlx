@@ -1,0 +1,18 @@
+config {
+  type: "operations",
+  schema: "bronze",
+  name: "customers"
+}
+
+CREATE OR REPLACE EXTERNAL TABLE `behnaz-data-engineer-portfolio.bronze.customers`
+(
+  customer_id INT64,
+  full_name STRING,
+  email STRING,
+  created_at TIMESTAMP
+)
+OPTIONS (
+  format = 'CSV',
+  uris = ['gs://behnaz-customer-orders/customers/*.csv'],
+  skip_leading_rows = 1
+)

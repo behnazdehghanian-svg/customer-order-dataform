@@ -1,10 +1,10 @@
 {
   "defaultSchema": "dataform",
   "assertionSchema": "dataform_assertions",
-  "defaultDatabase": "your-gcp-project-id",
-  "defaultLocation": "US",
+  "defaultDatabase": "behnaz-data-engineer-portfolio",
+  "defaultLocation": "us-central1",
   "warehouse": "bigquery",
   "vars": {
-    "gcsBucket": "your-gcs-bucket-name"
+    "gcsBucket": "behnaz-customer-orders"
   }
 }
