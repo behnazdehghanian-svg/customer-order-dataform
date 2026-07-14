@@ -1,0 +1,8 @@
+{
+  "name": "customer-order-dataform",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@dataform/core": "^3.0.0"
+  }
+}

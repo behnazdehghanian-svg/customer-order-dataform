@@ -1,0 +1,10 @@
+{
+  "defaultSchema": "dataform",
+  "assertionSchema": "dataform_assertions",
+  "defaultDatabase": "your-gcp-project-id",
+  "defaultLocation": "US",
+  "warehouse": "bigquery",
+  "vars": {
+    "gcsBucket": "your-gcs-bucket-name"
+  }
+}
