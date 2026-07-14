@@ -1,11 +1,11 @@
 config {
   type: "operations",
-  schema: "bronze",
+  schema: "customer_orders_bronze",
   name: "orders",
   hasOutput: true
 }
 
-CREATE OR REPLACE EXTERNAL TABLE `behnaz-data-engineer-portfolio.bronze.orders`
+CREATE OR REPLACE EXTERNAL TABLE `behnaz-data-engineer-portfolio.customer_orders_bronze.orders`
 (
   order_id INT64,
   customer_id INT64,

@@ -1,6 +1,6 @@
 config {
   type: "view",
-  schema: "silver",
+  schema: "customer_orders_silver",
   description: "Silver layer: cleaned and standardized customer records",
   assertions: {
     uniqueKey: ["customer_id"],
@@ -13,5 +13,5 @@ select
   trim(full_name) as full_name,
   lower(email) as email,
   created_at
-from ${ref("bronze", "customers")}
+from ${ref("customers")}
 where customer_id is not null

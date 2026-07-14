@@ -1,6 +1,6 @@
 config {
   type: "table",
-  schema: "gold",
+  schema: "customer_orders_gold",
   description: "Gold layer: one row per customer with order totals, ready for reporting/BI",
   assertions: {
     uniqueKey: ["customer_id"],

@@ -1,6 +1,6 @@
 config {
   type: "view",
-  schema: "silver",
+  schema: "customer_orders_silver",
   description: "Silver layer: cleaned and standardized order records",
   assertions: {
     uniqueKey: ["order_id"],
@@ -14,5 +14,5 @@ select
   order_date,
   order_amount,
   status
-from ${ref("bronze", "orders")}
+from ${ref("orders")}
 where order_id is not null
