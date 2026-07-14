@@ -1,7 +1,8 @@
 config {
   type: "operations",
   schema: "bronze",
-  name: "orders"
+  name: "orders",
+  hasOutput: true
 }
 
 CREATE OR REPLACE EXTERNAL TABLE `behnaz-data-engineer-portfolio.bronze.orders`
