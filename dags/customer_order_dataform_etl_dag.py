@@ -21,8 +21,8 @@ from airflow.providers.google.cloud.sensors.dataform import (
 from google.cloud.dataform_v1beta1 import WorkflowInvocation
 
 # Dataform repository location, not the BigQuery dataset location in dataform.json.
-PROJECT_ID = "your-gcp-project-id"
-REGION = "us-central1"
+PROJECT_ID = "behnaz-data-engineer-portfolio"
+REGION = "us-east1"
 REPOSITORY_ID = "customer-order-dataform"
 GIT_COMMITISH = "main"
 
