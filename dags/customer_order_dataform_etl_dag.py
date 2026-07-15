@@ -60,6 +60,7 @@ with DAG(
             "compilation_result": (
                 "{{ task_instance.xcom_pull('create_compilation_result')['name'] }}"
             ),
+            "service_account": "dataform-airflow@behnaz-data-engineer-portfolio.iam.gserviceaccount.com",
         },
     )
 
